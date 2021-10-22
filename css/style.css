@@ -92,8 +92,8 @@ h6 {
 }
 
 body {
-    color: #000;
-    font-size: 20px;
+    color: #fff;
+    font-size: 16px;
     line-height: 150%;
 }
 
@@ -540,7 +540,7 @@ textarea.input {
     background: url("../img/main-screen__bgc.jpg") center no-repeat;
     background-size: cover;
     color: #ffffff;
-    height: 100vh;
+    height: 86vh;
 }
 
 .header__nav {
@@ -625,17 +625,7 @@ textarea.input {
 }
 
 .header__body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 76vh;
+    margin-top: 15%;
 }
 
 .header__title {
@@ -826,6 +816,7 @@ textarea.input {
 .header__progress-bar div p {
     opacity: 0.4;
     font-size: 16px;
+    margin-top: 5px;
 }
 
 .icon-menu {
@@ -883,4 +874,144 @@ textarea.input {
         transform: rotate(45deg);
         bottom: calc(50% - 1px);
     }
+}
+
+.main {
+    background-color: #000;
+}
+
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 200px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 1362px) {
+    .about {
+        display: block;
+        text-align: center;
+    }
+}
+
+.about__text {
+    width: 50%;
+}
+
+@media (max-width: 1362px) {
+    .about__text {
+        width: 100%;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        margin-top: 20px;
+    }
+}
+
+.about__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 45px;
+}
+
+.start {
+    margin-top: 200px;
+}
+
+.start__title {
+    background: url("../img/start.svg") left no-repeat;
+    padding-left: 174px;
+    font-weight: bold;
+    font-size: 48px;
+    height: 127px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.start__sub-title {
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.5;
+    width: 411px;
+    margin-bottom: 80px;
+}
+
+.start__percentages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.start__percentages p {
+    text-align: center;
+    width: 324px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+.start__indicators {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.start__indicators_1 {
+    background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    width: 324px;
+    height: 80px;
+}
+
+.start__indicators_2 {
+    background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 324px;
+    height: 60px;
+}
+
+.start__indicators_3 {
+    background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    width: 324px;
+    height: 30px;
+}
+
+.start__indicators_4 {
+    background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 324px;
+    height: 10px;
+}
+
+.start__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 35px;
+}
+
+.start__text p {
+    width: 308px;
+    margin-top: 18px;
 }

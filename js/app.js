@@ -70,3 +70,21 @@ function body_lock_add(delay) {
     }, delay);
   }
 }
+
+const day = document.getElementById("day");
+const hour = document.getElementById("hour");
+const min = document.getElementById("min");
+const sec = document.getElementById("sec");
+
+function time() {
+  const date1 = new Date();
+  const date2 = new Date(2022, 03, 07);
+  const diffTime = Math.abs(date1 - date2);
+  day.innerHTML = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  hour.innerHTML = Math.ceil(diffTime / (1000 * 60 * 60));
+  min.innerHTML = Math.ceil(diffTime / (1000 * 60));
+  sec.innerHTML = Math.ceil(diffTime / 1000);
+}
+setInterval(() => {
+  time();
+}, 1000);
